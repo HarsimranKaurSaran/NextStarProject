@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img_upload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_userimg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Write something here..."
+        android:textAlignment="viewStart"
+        android:textColorHint="#ababab"
+        android:background="@drawable/rounded_border"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/user_img_upload"
+        android:gravity="start" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgshow"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/linear_lay"
+        android:scaleType="fitCenter"
+        android:src="@drawable/flowers"
+        android:layout_margin="4dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp">
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="Select"/>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="Upload"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
